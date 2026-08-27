@@ -1,0 +1,31 @@
+// Step 1: Use `publishConfig` option in your package.json
+"publishConfig": { "registry": "https://npm.pkg.github.com/kolumnin" }
+
+// Step 2: Authenticate
+//$ npm login --registry=https://npm.pkg.github.com/
+
+// Step 3: Publish
+//$ npm publish
+//  > npm init --yes
+//  Wrote to /home/kolumnin/my_package/package.json:
+
+  {
+    "name": "my_package",
+    "description": "",
+    "version": "1.0.0",
+    "main": "index.js",
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/kolumnin/my_package.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+      "url": "https://github.com/kolumnin/my_package/issues"
+    },
+    "homepage": "https://github.com/kolumnin/my_package"
+  }
